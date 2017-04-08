@@ -25,7 +25,6 @@ public abstract class BasicTest extends Core {
 	public void setupFirefox() {
 		this.driver = new FirefoxDriver();
 		this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		this.driver.manage().window().maximize();
 	}
 
 	@BeforeTest(enabled = false)
